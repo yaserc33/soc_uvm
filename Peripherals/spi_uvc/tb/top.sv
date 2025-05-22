@@ -14,10 +14,14 @@ module top;
   //import spi refrence module 
     import spi_module_pkg::*;
     
-  `include "mc_sequencer.sv"
-  `include "mc_seq_lib.sv"
+
+
+    
+  `include "../sv/mc_sequencer.sv"
+  `include "../sequences/wb_spi_sequences.sv"
+  `include "../sequences/wb_spi_mcseqs_lib.sv"
   `include "testbench.sv"
-  `include "../test/wb_spi_test_lib.sv"
+  `include "../tests/wb_spi_test_lib.sv"
 
 
   
@@ -29,12 +33,6 @@ module top;
 
     run_test();
   end
-
-initial begin
-  #20000ns;
-$finish;
-
-end
 
 
   initial begin

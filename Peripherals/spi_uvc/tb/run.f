@@ -13,7 +13,7 @@
 
 ############select test###########
 
-+UVM_TESTNAME=wbxspi_write_test
++UVM_TESTNAME=wbxspi1_en_test
 //+UVM_TESTNAME=wb_all_address_test
 
 

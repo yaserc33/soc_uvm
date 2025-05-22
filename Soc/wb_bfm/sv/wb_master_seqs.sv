@@ -1,4 +1,3 @@
-
 class wb_base_seq extends uvm_sequence #(wb_transaction);
 
   // Required macro for sequences automation

@@ -9,7 +9,7 @@ package wb_pkg;
 `include "wb_master_driver.sv"
 `include "wb_master_monitor.sv"
 `include "wb_master_agent.sv"
-`include "wb_master_seqs.sv"
+// `include "wb_master_seqs.sv"
 
 `include "wb_slave_sequencer.sv"
 `include "wb_slave_driver.sv"

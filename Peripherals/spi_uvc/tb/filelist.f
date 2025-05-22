@@ -13,6 +13,15 @@
 ../spi/sv/spi_pkg.sv
 ../spi/sv/spi_if.sv
 
++incdir+../wb_x_spi_module/sv
+../wb_x_spi_module/sv/spi_module_pkg.sv
+
+
++incdir+../sv
++incdir+../tests
++incdir+../sequences
+../sv/spi_defines.sv
+
 
 
 
@@ -43,8 +52,6 @@
 ../rtl/WishboneInterconnect/wb_intercon.sv
 ../rtl/WishboneInterconnect/wb_soc_top.sv
 
-+incdir+../wb_x_spi_module/sv
-../wb_x_spi_module/sv/spi_module_pkg.sv
 
 // clokgen & hw_top files
 clkgen.sv

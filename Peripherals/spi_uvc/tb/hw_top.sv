@@ -5,10 +5,7 @@ logic [31:0]  clock_period;
 logic         run_clock;
 logic         clock;
 logic         reset;
-logic sclk1 ;
-logic cs1 ;
-logic sclk2 ;
-logic cs2 ;
+
 
 //interfaces
 
@@ -27,16 +24,12 @@ wb_if wif (
 
 spi_if sif1 (
     .clock(clock),
-    .reset(reset),
-    .sclk(sclk1),
-    .cs(cs1)
+    .reset(reset)
   );
 
 spi_if sif2 (
     .clock(clock),
-    .reset(reset),
-    .sclk(sclk2),
-    .cs(cs2)
+    .reset(reset)
   );
 
 
@@ -76,14 +69,14 @@ assign wb_s2m_dat_net= {24'b0 , wif.dout}; //our wb uvc support one byte data_ou
     .wb_s2m_ack(wif.ack),
   
     // spi 1
-    .o_spi_1_sclk(sclk1),     
-    .o_spi_1_cs_n(cs1),     
+    .o_spi_1_sclk(sif1.sclk),     
+    .o_spi_1_cs_n(sif1.cs),     
     .o_spi_1_mosi(sif1.mosi),     
     .i_spi_1_miso(sif1.miso),     
 
     // spi 2
-    .o_spi_2_sclk(sclk2),     
-    .o_spi_2_cs_n(cs2),     
+    .o_spi_2_sclk(sif2.sclk),     
+    .o_spi_2_cs_n(sif2.cs),     
     .o_spi_2_mosi(sif2.mosi),     
     .i_spi_2_miso(sif2.miso),     
 

@@ -4,7 +4,7 @@ class mc_sequencer extends uvm_sequencer;
 
 
    //declare all the seqer u plan to use 
-   wb_master_sequencer wb_seqr;
+   wb_master_sequencer   wb_seqr;
    spi_slave_sequencer   spi1_seqr;
    spi_slave_sequencer   spi2_seqr;
    

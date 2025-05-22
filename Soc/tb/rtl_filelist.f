@@ -1,7 +1,7 @@
 # Filelist for VCS simulation
 
 # Compilation Flags
--timescale=1ns/10ps
+-timescale=1ns/1ns
 -sverilog
 
 # Defines

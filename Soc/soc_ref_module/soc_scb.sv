@@ -210,10 +210,10 @@ function void report_phase(uvm_phase phase);
   // `uvm_info("UART_SCB", $sformatf("Number of mismatched transactions : %0d", num_mismatched), UVM_LOW)
    
  //start of SB 
- if (!uvm_config_db#(string)::get(this, "", "test_name", test_name))
+ if (!uvm_config_db#(string)::get(this, "", "CUR_TEST_NAME", test_name))
           `uvm_warning("SCOREBOARD", "Could not retrieve test_name from config DB");
 
- if (!uvm_config_db#(string)::get(this, "", "seq_name", seq_name))
+ if (!uvm_config_db#(string)::get(this, "", "CUR_SEQ_NAME", seq_name))
           `uvm_warning("SCOREBOARD", "Could not retrieve seq_name from config DB");
 `uvm_info("SCOREBOARD", "-------------------- SCOREBOARD REPORT --------------------", UVM_LOW)
     `uvm_info("SCOREBOARD", $sformatf("Test Name: %s , Sequence Name : %s", test_name,seq_name), UVM_LOW)

@@ -103,7 +103,6 @@
 ../../Soc/wb_bfm/sv/wb_master_agent.sv
 ../../Soc/wb_bfm/sv/wb_master_driver.sv
 ../../Soc/wb_bfm/sv/wb_master_monitor.sv
-../../Soc/wb_bfm/sv/wb_master_seqs.sv
 ../../Soc/wb_bfm/sv/wb_master_sequencer.sv
 ../../Soc/wb_bfm/sv/wb_pkg.sv
 ../../Soc/wb_bfm/sv/wb_slave_agent.sv

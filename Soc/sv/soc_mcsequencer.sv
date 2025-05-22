@@ -4,8 +4,9 @@ class soc_mcsequencer extends uvm_sequencer;
 
 
     // uart_rx_sequencer  uart_seqr ; 
-    wb_master_sequencer wb_seqr; 
+   wb_master_sequencer wb_seqr; 
    spi_slave_sequencer spi1_seqr ; 
+   spi_slave_sequencer spi2_seqr ; 
   //--------------------------------------------------------
   //Constructor
   //--------------------------------------------------------

@@ -1,4 +1,4 @@
-851      
+847      
 0 uvm_macros.svh
 0 /mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/systemverilog/uvm_macros.svh
 0 /mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/vcs/uvm_macros.svh
@@ -432,10 +432,6 @@
 0 /mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/systemverilog/wb_master_agent.sv
 0 /mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/vcs/wb_master_agent.sv
 0 /mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/wb_master_agent.sv
-0 wb_master_seqs.sv
-0 /mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/systemverilog/wb_master_seqs.sv
-0 /mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/vcs/wb_master_seqs.sv
-0 /mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/wb_master_seqs.sv
 0 wb_slave_sequencer.sv
 0 /mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/systemverilog/wb_slave_sequencer.sv
 0 /mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/vcs/wb_slave_sequencer.sv
@@ -850,7 +846,7 @@
 0 ../../Peripherals/spi_uvc/wb_x_spi_module/sv/soc/rom/tsmc_rom_1k_rtl.v
 0 ../../Soc/soc_ref_module/soc/rom/tsmc_rom_1k_rtl.v
 0 ../../Soc/tb/soc/rom/tsmc_rom_1k_rtl.v
-143
+144
 +define+
 +define+SOC
 +define+UVM_DIRECTC_OPTS
@@ -913,13 +909,14 @@
 -picarchive
 -sverilog
 -sverilog
--timescale=1ns/10ps
+-timescale=1ns/1ns
 -timescale=1ns/1ns
 /mnt/NVME2/synopsys/vcs/W-2024.09-SP1/linux64/bin/vcs1
 /mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_pkg.sv
 /mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv
 uvm
 simv
+defines.sv
 ../../Soc/wb_bfm/sv/wb_pkg.sv
 ../../Soc/wb_bfm/sv/wb_if.sv
 ../../Soc/clock_and_reset/sv/clock_and_reset_pkg.sv
@@ -994,18 +991,20 @@ simv
 ../../RivRtos/src/soc/io_mux.sv
 ../../RivRtos/src/soc/rv32i_soc.sv
 ../../RivRtos/src/pads/top_rv32i_soc.sv
-133
+142
 which_declare=declare -f
-XDG_SESSION_ID=84
-XDG_RUNTIME_DIR=/run/user/1042
-XDG_DATA_DIRS=/home/Rahaf_Alqahtani/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+_P9K_TTY=/dev/pts/108
+_P9K_SSH_TTY=/dev/pts/108
+XDG_SESSION_ID=328
+XDG_RUNTIME_DIR=/run/user/1050
+XDG_DATA_DIRS=/home/Yasir_Alqulayti/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop
 XA_HOME=/mnt/NVME2/synopsys/xa/W-2024.09-SP1
 VUI_HOME=/mnt/NVME2/synopsys/vui/W-2024.09-SP2
 VTRAN_HOME=/mnt/NVME2/synopsys/vtran/W-2024.09-SP2
-VSCODE_IPC_HOOK_CLI=/run/user/1042/vscode-ipc-b32c81ad-02db-4383-ad2c-a2bc3ad955c6.sock
-VSCODE_GIT_IPC_HANDLE=/run/user/1042/vscode-git-f8a703172e.sock
-VSCODE_GIT_ASKPASS_NODE=/home/Rahaf_Alqahtani/.vscode-server/cli/servers/Stable-848b80aeb52026648a8ff9f7c45a9b0a80641e2e/server/node
-VSCODE_GIT_ASKPASS_MAIN=/home/Rahaf_Alqahtani/.vscode-server/cli/servers/Stable-848b80aeb52026648a8ff9f7c45a9b0a80641e2e/server/extensions/git/dist/askpass-main.js
+VSCODE_IPC_HOOK_CLI=/run/user/1050/vscode-ipc-b0bd471e-515e-4f9b-9a53-aab77d144432.sock
+VSCODE_GIT_IPC_HANDLE=/run/user/1050/vscode-git-d11ffb585d.sock
+VSCODE_GIT_ASKPASS_NODE=/home/Yasir_Alqulayti/.vscode-server/cli/servers/Stable-848b80aeb52026648a8ff9f7c45a9b0a80641e2e/server/node
+VSCODE_GIT_ASKPASS_MAIN=/home/Yasir_Alqulayti/.vscode-server/cli/servers/Stable-848b80aeb52026648a8ff9f7c45a9b0a80641e2e/server/extensions/git/dist/askpass-main.js
 VSCODE_GIT_ASKPASS_EXTRA_ARGS=
 VMR_MODE_FLAG=64
 VGEN_HOME=/mnt/NVME2/synopsys/vgen/W-2024.09-SP2
@@ -1029,17 +1028,19 @@ UNAME=/bin/uname
 UFE_OPTIONAL_SPYGLASS_VCS_HOME=/mnt/NVME2/synopsys/ufe_optional_spyglass-vcs
 TXS_HOME=/mnt/NVME2/synopsys/txs
 TWEAKER_HOME=/mnt/NVME2/synopsys/tweaker
+TREE_COLORS=fi=00:mi=00:mh=00:ln=01;36:or=01;31:di=01;34:ow=01;34:st=34:tw=34:pi=01;33:so=01;33:do=01;33:bd=01;33:cd=01;33:su=01;35:sg=01;35:ca=01;35:ex=01;32
 TOOL_HOME=/mnt/NVME2/synopsys/vcs/W-2024.09-SP1/linux64
 TESTMAX_HOME=/mnt/NVME2/synopsys/testmax
 TERM_PROGRAM_VERSION=1.100.2
 TERM_PROGRAM=vscode
+TERMINFO=/home/Yasir_Alqulayti/.terminfo
 TCM_HOME=/mnt/NVME2/synopsys/tcm
 SYN_HOME=/mnt/NVME2/synopsys/syn
 STARRC_HOME=/mnt/NVME2/synopsys/starrc
 SSL_CERT_FILE=/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
 SSL_CERT_DIR=/etc/pki/tls/certs
-SSH_CONNECTION=192.168.1.37 57328 192.168.1.8 22
-SSH_CLIENT=192.168.1.37 57328 22
+SSH_CONNECTION=192.168.1.11 50424 192.168.1.8 22
+SSH_CLIENT=192.168.1.11 50424 22
 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
 SPYGLASS_HOME=/mnt/NVME2/synopsys/spyglass/W-2024.09-SP1/SPYGLASS_HOME
 SPIKE_PATH=/usr/bin
@@ -1063,7 +1064,7 @@ RISC_V_GCC=/mnt/SATA2/riscv32gcc/bin/riscv32-unknown-elf-gcc
 RISCV_TOOLCHAIN=/mnt/SATA2/riscv32gcc
 RISCV_OBJCOPY=/mnt/SATA2/riscv32gcc/bin/riscv32-unknown-elf-objcopy
 RISCV_GCC=/mnt/SATA2/riscv32gcc/bin/riscv32-unknown-elf-gcc
-RISCV_DV_ROOT=/home/Rahaf_Alqahtani/Documents/verif/riscv-dv
+RISCV_DV_ROOT=/home/Yasir_Alqulayti/Documents/verif/riscv-dv
 RHSC_ELECTROTHERMAL_ANALYSIS_FUSION_HOME=/mnt/NVME2/synopsys/rhsc_electrothermal_analysis_fusion
 RHSC_ANALYSIS_FUSION_HOME=/mnt/NVME2/synopsys/rhsc_analysis_fusion
 PRIME_HOME=/mnt/NVME2/synopsys/prime
@@ -1076,6 +1077,8 @@ PRIMESIM_DI_HOME=/mnt/NVME2/synopsys/primesim_di
 PRIMELIB_HOME=/mnt/NVME2/synopsys/primelib
 PRIMECLOSURE_HOME=/mnt/NVME2/synopsys/primeclosure
 PPRTL_HOME=/mnt/NVME2/synopsys/pprtl
+P9K_TTY=old
+P9K_SSH=1
 OVA_UUM=0
 NT_HOME=/mnt/NVME2/synopsys/nt
 MW_HOME=/mnt/NVME2/synopsys/mw
@@ -1086,25 +1089,28 @@ MODULEPATH_modshare=/usr/share/Modules/modulefiles:2:/etc/modulefiles:2:/usr/sha
 MODULEPATH=/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
 MFLAGS=
 MECHANICAL_ENGINE_ANALYSIS_FUSION_HOME=/mnt/NVME2/synopsys/mechanical_engine_analysis_fusion
-MAKE_TERMOUT=/dev/pts/11
-MAKE_TERMERR=/dev/pts/11
+MAKE_TERMOUT=/dev/pts/108
+MAKE_TERMERR=/dev/pts/108
 MAKELEVEL=1
 MAKEFLAGS=
+LSCOLORS=ExGxDxDxCxDxDxFxFxexEx
 LOADEDMODULES=
-LESSOPEN=||/usr/bin/lesspipe.sh %s
+LESSOPEN=| /usr/bin/env /usr/bin/lesspipe.sh %s 2>/dev/null
+LESS=-iRFXMx4
 LC_HOME=/mnt/NVME2/synopsys/lc
 LC_ALL=C
 LAKER_HOME=/mnt/NVME2/synopsys/laker
 IDQ_HOME=/mnt/NVME2/synopsys/idq
 IDENTIFY_HOME=/mnt/NVME2/synopsys/identify
 ICV_WORKBENCH_HOME=/mnt/NVME2/synopsys/icv_workbench
-ICVALIDATOR_HOME=/mnt/NVME2/synopsys/icvalidator
+ICV_HOME_DIR=/mnt/NVME2/synopsys/icvalidator/W-2024.09-SP2
 ICC_HOME=/mnt/NVME2/synopsys/icc
 ICC2_HOME=/mnt/NVME2/synopsys/icc2/W-2024.09-SP2/
 HSPICE_HOME=/mnt/NVME2/synopsys/hspice
 HSIM_HOME=/mnt/NVME2/synopsys/hsim
 HISTCONTROL=ignoredups
-GIT_ASKPASS=/home/Rahaf_Alqahtani/.vscode-server/cli/servers/Stable-848b80aeb52026648a8ff9f7c45a9b0a80641e2e/server/extensions/git/dist/askpass.sh
+GPG_TTY=/dev/pts/108
+GIT_ASKPASS=/home/Yasir_Alqulayti/.vscode-server/cli/servers/Stable-848b80aeb52026648a8ff9f7c45a9b0a80641e2e/server/extensions/git/dist/askpass.sh
 FUSIONCOMPILER_HOME=/mnt/NVME2/synopsys/fusioncompiler
 FPGA_HOME=/mnt/NVME2/synopsys/fpga
 FM_HOME=/mnt/NVME2/synopsys/fm
@@ -1113,7 +1119,7 @@ EXECMAN_HOME=/mnt/NVME2/synopsys/execman
 ESP_HOME=/mnt/NVME2/synopsys/esp
 EMBEDIT_HOME=/mnt/NVME2/synopsys/embedit
 DFTVIEW_HOME=/mnt/NVME2/synopsys/dftview
-DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1042/bus
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1050/bus
 CUSTOMINFRASTRUCTURE_HOME=/mnt/NVME2/synopsys/custominfrastructure
 CUSTOMCOMPILER_HOME=/mnt/NVME2/synopsys/customcompiler
 COLORTERM=truecolor
@@ -1130,58 +1136,56 @@ BASH_FUNC__module_raw%%=() {  unset _mlshdbg;_ if [ "${MODULES_SILENT_SHELL_DEBU
 ALE_HOME=/mnt/NVME2/synopsys/ale
 0
 0
-269
-1747139321 ../../RivRtos/src/soc/rom/tsmc_rom_1k_rtl.v
-1747139321 ../../RivRtos/src/soc/sram/tsmc_8k_rtl.v
-1747139321 ../../RivRtos/src/soc/sram/tsmc_32k_rtl.v
-1747139321 ../../RivRtos/src/pads/tpz018nv_270a/tpz018nv.v
-1747649604 ../../Peripherals/spi_uvc/tests/wb_spi_test_lib.sv
-1747647616 ../tests/soc_system_test_lib.sv
-1747646090 soc_tb.sv
-1747643171 ../sequences/soc_mcseqs_lib.sv
-1747650794 ../../Peripherals/spi_uvc/sequences/wb_spi_mcseqs_lib.sv
-1747653514 ../../Peripherals/spi_uvc/sequences/wb_spi_sequences.sv
-1747645717 ../sequences/wb_soc_sequences.sv
-1747570577 ../sv/soc_mcsequencer.sv
-1747563351 defines.sv
-1747232848 ../../Soc/soc_ref_module/soc_ref_env.sv
-1747556130 ../../Soc/soc_ref_module/soc_scb.sv
-1747292903 ../../Soc/soc_ref_module/wb_ref_model.sv
-1747324326 ../../Peripherals/spi_uvc/wb_x_spi_module/sv/spi_module.sv
-1747324326 ../../Peripherals/spi_uvc/wb_x_spi_module/sv/scoreboard.sv
-1747554881 ../../Peripherals/spi_uvc/wb_x_spi_module/sv/wb_x_spi_module.sv
-1747324326 ../../Peripherals/spi_uvc/spi/sv/../sv/spi_env.sv
-1747324326 ../../Peripherals/spi_uvc/spi/sv/../sv/spi_slave_agent.sv
-1747326644 ../../Peripherals/spi_uvc/spi/sv/../sv/spi_slave_driver.sv
-1747324326 ../../Peripherals/spi_uvc/spi/sv/../sv/spi_slave_seqs.sv
-1747324326 ../../Peripherals/spi_uvc/spi/sv/../sv/spi_slave_sequencer.sv
-1747324326 ../../Peripherals/spi_uvc/spi/sv/../sv/spi_slave_monitor.sv
-1747324326 ../../Peripherals/spi_uvc/spi/sv/../sv/spi_master_agent.sv
-1747324326 ../../Peripherals/spi_uvc/spi/sv/../sv/spi_master_driver.sv
-1747324326 ../../Peripherals/spi_uvc/spi/sv/../sv/spi_master_sequencer.sv
-1747324326 ../../Peripherals/spi_uvc/spi/sv/../sv/spi_master_seqs.sv
-1747324326 ../../Peripherals/spi_uvc/spi/sv/../sv/spi_master_monitor.sv
-1747324326 ../../Peripherals/spi_uvc/spi/sv/../sv/spi_transaction.sv
-1747139322 ../../Soc/clock_and_reset/sv/clock_and_reset_count_clocks_seq.sv
-1747642255 ../../Soc/clock_and_reset/sv/clock_and_reset_seq.sv
-1747139322 ../../Soc/clock_and_reset/sv/clock_and_reset_env.sv
-1747139322 ../../Soc/clock_and_reset/sv/clock_and_reset_agent.sv
-1747139322 ../../Soc/clock_and_reset/sv/clock_and_reset_driver.sv
-1747139322 ../../Soc/clock_and_reset/sv/clock_and_reset_sequencer.sv
-1747139322 ../../Soc/clock_and_reset/sv/clock_and_reset_sequence_item.sv
-1747139322 ../../Soc/clock_and_reset/sv/clock_and_reset_config.sv
-1747139328 ../../Soc/wb_bfm/sv/wb_env.sv
-1747139328 ../../Soc/wb_bfm/sv/wb_slave_seqs.sv
-1747139328 ../../Soc/wb_bfm/sv/wb_slave_agent.sv
-1747204900 ../../Soc/wb_bfm/sv/wb_slave_monitor.sv
-1747139328 ../../Soc/wb_bfm/sv/wb_slave_driver.sv
-1747139328 ../../Soc/wb_bfm/sv/wb_slave_sequencer.sv
-1747651770 ../../Soc/wb_bfm/sv/wb_master_seqs.sv
-1747139328 ../../Soc/wb_bfm/sv/wb_master_agent.sv
-1747331859 ../../Soc/wb_bfm/sv/wb_master_monitor.sv
-1747651138 ../../Soc/wb_bfm/sv/wb_master_driver.sv
-1747651684 ../../Soc/wb_bfm/sv/wb_master_sequencer.sv
-1747653419 ../../Soc/wb_bfm/sv/wb_transaction.sv
+268
+1747664802 ../../RivRtos/src/soc/rom/tsmc_rom_1k_rtl.v
+1747664802 ../../RivRtos/src/soc/sram/tsmc_8k_rtl.v
+1747664802 ../../RivRtos/src/soc/sram/tsmc_32k_rtl.v
+1747816594 ../../RivRtos/src/pads/tpz018nv_270a/tpz018nv.v
+1747909811 ../../Peripherals/spi_uvc/tests/wb_spi_test_lib.sv
+1747920599 ../tests/soc_system_test_lib.sv
+1747916684 soc_tb.sv
+1747910306 ../sequences/soc_mcseqs_lib.sv
+1747906263 ../../Peripherals/spi_uvc/sequences/wb_spi_mcseqs_lib.sv
+1747921089 ../../Peripherals/spi_uvc/sequences/wb_spi_sequences.sv
+1747664802 ../sequences/wb_soc_sequences.sv
+1747910410 ../sv/soc_mcsequencer.sv
+1747664802 ../../Soc/soc_ref_module/soc_ref_env.sv
+1747920659 ../../Soc/soc_ref_module/soc_scb.sv
+1747664802 ../../Soc/soc_ref_module/wb_ref_model.sv
+1747905492 ../../Peripherals/spi_uvc/wb_x_spi_module/sv/spi_module.sv
+1747905468 ../../Peripherals/spi_uvc/wb_x_spi_module/sv/scoreboard.sv
+1747905506 ../../Peripherals/spi_uvc/wb_x_spi_module/sv/wb_x_spi_module.sv
+1747824418 ../../Peripherals/spi_uvc/spi/sv/../sv/spi_env.sv
+1747824418 ../../Peripherals/spi_uvc/spi/sv/../sv/spi_slave_agent.sv
+1747824418 ../../Peripherals/spi_uvc/spi/sv/../sv/spi_slave_driver.sv
+1747824418 ../../Peripherals/spi_uvc/spi/sv/../sv/spi_slave_seqs.sv
+1747824418 ../../Peripherals/spi_uvc/spi/sv/../sv/spi_slave_sequencer.sv
+1747824418 ../../Peripherals/spi_uvc/spi/sv/../sv/spi_slave_monitor.sv
+1747824418 ../../Peripherals/spi_uvc/spi/sv/../sv/spi_master_agent.sv
+1747824418 ../../Peripherals/spi_uvc/spi/sv/../sv/spi_master_driver.sv
+1747824418 ../../Peripherals/spi_uvc/spi/sv/../sv/spi_master_sequencer.sv
+1747824418 ../../Peripherals/spi_uvc/spi/sv/../sv/spi_master_seqs.sv
+1747824418 ../../Peripherals/spi_uvc/spi/sv/../sv/spi_master_monitor.sv
+1747824418 ../../Peripherals/spi_uvc/spi/sv/../sv/spi_transaction.sv
+1747664802 ../../Soc/clock_and_reset/sv/clock_and_reset_count_clocks_seq.sv
+1747664802 ../../Soc/clock_and_reset/sv/clock_and_reset_seq.sv
+1747664802 ../../Soc/clock_and_reset/sv/clock_and_reset_env.sv
+1747664802 ../../Soc/clock_and_reset/sv/clock_and_reset_agent.sv
+1747664802 ../../Soc/clock_and_reset/sv/clock_and_reset_driver.sv
+1747664802 ../../Soc/clock_and_reset/sv/clock_and_reset_sequencer.sv
+1747664802 ../../Soc/clock_and_reset/sv/clock_and_reset_sequence_item.sv
+1747664802 ../../Soc/clock_and_reset/sv/clock_and_reset_config.sv
+1747664802 ../../Soc/wb_bfm/sv/wb_env.sv
+1747664802 ../../Soc/wb_bfm/sv/wb_slave_seqs.sv
+1747664802 ../../Soc/wb_bfm/sv/wb_slave_agent.sv
+1747664802 ../../Soc/wb_bfm/sv/wb_slave_monitor.sv
+1747664802 ../../Soc/wb_bfm/sv/wb_slave_driver.sv
+1747664802 ../../Soc/wb_bfm/sv/wb_slave_sequencer.sv
+1747664802 ../../Soc/wb_bfm/sv/wb_master_agent.sv
+1747664802 ../../Soc/wb_bfm/sv/wb_master_monitor.sv
+1747664802 ../../Soc/wb_bfm/sv/wb_master_driver.sv
+1747664802 ../../Soc/wb_bfm/sv/wb_master_sequencer.sv
+1747664802 ../../Soc/wb_bfm/sv/wb_transaction.sv
 1733289098 /mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/vcs/uvm_vcs_record_interface.sv
 1733289098 /mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/vcs/uvm_vcs_recorder.svh
 1733289098 /mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/vcs/uvm_msglog_report_server.sv
@@ -1321,84 +1325,85 @@ ALE_HOME=/mnt/NVME2/synopsys/ale
 1733289097 /mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/macros/snps_macros.svp
 1733289097 /mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/macros/uvm_version_defines.svh
 1733289098 /mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_macros.svh
-1747139321 ../../RivRtos/src/pads/top_rv32i_soc.sv
-1747230417 ../../RivRtos/src/soc/rv32i_soc.sv
-1747139321 ../../RivRtos/src/soc/io_mux.sv
-1747139321 ../../RivRtos/src/soc/core/data_mem.sv
-1747139321 ../../RivRtos/src/soc/core/sram_wrapper.sv
-1747139321 ../../RivRtos/src/soc/debug/debug_top.sv
-1747139321 ../../RivRtos/src/soc/debug/dm.sv
-1747139321 ../../RivRtos/src/soc/debug/dtm.sv
-1747139322 ../../RivRtos/src/soc/uncore/plic/plic_top.sv
-1747139322 ../../RivRtos/src/soc/uncore/plic/plic_core.sv
-1747139322 ../../RivRtos/src/soc/uncore/plic/plic_gateway.sv
-1747139322 ../../RivRtos/src/soc/uncore/plic/plic_pkg.sv
-1747139322 ../../RivRtos/src/soc/uncore/i2c/rtl/i2c_master_top.v
-1747139321 ../../RivRtos/src/soc/uncore/i2c/rtl/i2c_master_byte_ctrl.v
-1747139321 ../../RivRtos/src/soc/uncore/i2c/rtl/i2c_master_bit_ctrl.v
-1747139321 ../../RivRtos/src/soc/uncore/i2c/rtl/i2c_master_defines.v
-1747139322 ../../RivRtos/src/soc/uncore/ptc/ptc_top.v
-1747139322 ../../RivRtos/src/soc/uncore/ptc/ptc_defines.v
-1747139321 ../../RivRtos/src/soc/uncore/clint/clint_top.sv
-1747139321 ../../RivRtos/src/soc/uncore/clint/clint_wb.sv
-1747139322 ../../RivRtos/src/soc/uncore/uart/uart_wb.v
-1747139322 ../../RivRtos/src/soc/uncore/uart/uart_transmitter.v
-1747139322 ../../RivRtos/src/soc/uncore/uart/uart_top.v
-1747139322 ../../RivRtos/src/soc/uncore/uart/uart_tfifo.v
-1747139322 ../../RivRtos/src/soc/uncore/uart/uart_sync_flops.v
-1747139322 ../../RivRtos/src/soc/uncore/uart/uart_rfifo.v
-1747139322 ../../RivRtos/src/soc/uncore/uart/uart_regs.v
-1747139322 ../../RivRtos/src/soc/uncore/uart/uart_receiver.v
-1747139322 ../../RivRtos/src/soc/uncore/uart/raminfr.v
-1747139322 ../../RivRtos/src/soc/uncore/uart/uart_defines.v
-1747293131 ../../RivRtos/src/soc/uncore/spi/simple_spi_top.v
-1747139322 ../../RivRtos/src/soc/uncore/spi/fifo4.v
-1747139321 ../../RivRtos/src/soc/uncore/gpio/gpio_top.sv
-1747139321 ../../RivRtos/src/soc/uncore/gpio/bidirec.sv
-1747139321 ../../RivRtos/src/soc/uncore/gpio/gpio_defines.v
-1747139321 ../../RivRtos/src/soc/WishboneInterconnect/wishbone_controller.sv
-1747223563 ../../RivRtos/src/soc/WishboneInterconnect/wb_intercon.sv
-1747222358 ../../RivRtos/src/soc/WishboneInterconnect/wb_intercon_1.2.2-r1/wb_mux.v
-1747139321 ../../RivRtos/src/soc/core/rv32i_top.sv
-1747139321 ../../RivRtos/src/soc/core/core_dbg_fsm.sv
-1747139321 ../../RivRtos/src/soc/core/control_unit.sv
-1747139321 ../../RivRtos/src/soc/core/data_path.sv
-1747139321 ../../RivRtos/src/soc/core/alu.sv
-1747139321 ../../RivRtos/src/soc/core/exception_encoder.sv
-1747139321 ../../RivRtos/src/soc/core/atomic_extension.sv
-1747139321 ../../RivRtos/src/soc/core/iadu.sv
-1747139321 ../../RivRtos/src/soc/core/decompressor.sv
-1747139321 ../../RivRtos/src/soc/core/pipeline_controller.sv
-1747139321 ../../RivRtos/src/soc/core/hazard_controller.sv
-1747139321 ../../RivRtos/src/soc/core/forwarding_unit.sv
-1747139321 ../../RivRtos/src/soc/core/rom.sv
-1747139321 ../../RivRtos/src/soc/core/reg_file.sv
-1747139321 ../../RivRtos/src/soc/core/main_control.sv
-1747139321 ../../RivRtos/src/soc/core/imm_gen.sv
-1747139321 ../../RivRtos/src/soc/core/csr_file.sv
-1747139321 ../../RivRtos/src/soc/core/branch_controller.sv
-1747139321 ../../RivRtos/src/soc/core/div.sv
-1747139321 ../../RivRtos/src/soc/core/mul.sv
-1747139321 ../../RivRtos/src/soc/core/alu_control.sv
-1747139321 ../../RivRtos/src/soc/core/alignment_units.sv
-1747139321 ../../RivRtos/src/soc/debug/debug_pkg.sv
-1747139321 ../../RivRtos/src/soc/core/lib.sv
-1747650710 ../../Soc/tb/top.sv
-1747563351 ../../Soc/tb/defines.sv
-1747644872 ../../Soc/tb/hw_top.sv
-1747139322 ../../Soc/tb/clkgen.sv
-1747139322 ../../Soc/soc_ref_module/soc_pkg.sv
-1747324326 ../../Peripherals/spi_uvc/wb_x_spi_module/sv/spi_module_pkg.sv
-1747324326 ../../Peripherals/spi_uvc/spi/sv/spi_if.sv
-1747324326 ../../Peripherals/spi_uvc/spi/sv/spi_pkg.sv
-1747139322 ../../Soc/clock_and_reset/sv/clock_and_reset_if.sv
-1747139322 ../../Soc/clock_and_reset/sv/clock_and_reset_pkg.sv
-1747217819 ../../Soc/wb_bfm/sv/wb_if.sv
-1747139328 ../../Soc/wb_bfm/sv/wb_pkg.sv
+1747816594 ../../RivRtos/src/pads/top_rv32i_soc.sv
+1747664802 ../../RivRtos/src/soc/rv32i_soc.sv
+1747664802 ../../RivRtos/src/soc/io_mux.sv
+1747664802 ../../RivRtos/src/soc/core/data_mem.sv
+1747664802 ../../RivRtos/src/soc/core/sram_wrapper.sv
+1747664802 ../../RivRtos/src/soc/debug/debug_top.sv
+1747664802 ../../RivRtos/src/soc/debug/dm.sv
+1747664802 ../../RivRtos/src/soc/debug/dtm.sv
+1747664802 ../../RivRtos/src/soc/uncore/plic/plic_top.sv
+1747664802 ../../RivRtos/src/soc/uncore/plic/plic_core.sv
+1747664802 ../../RivRtos/src/soc/uncore/plic/plic_gateway.sv
+1747664802 ../../RivRtos/src/soc/uncore/plic/plic_pkg.sv
+1747664802 ../../RivRtos/src/soc/uncore/i2c/rtl/i2c_master_top.v
+1747664802 ../../RivRtos/src/soc/uncore/i2c/rtl/i2c_master_byte_ctrl.v
+1747664802 ../../RivRtos/src/soc/uncore/i2c/rtl/i2c_master_bit_ctrl.v
+1747664802 ../../RivRtos/src/soc/uncore/i2c/rtl/i2c_master_defines.v
+1747664802 ../../RivRtos/src/soc/uncore/ptc/ptc_top.v
+1747664802 ../../RivRtos/src/soc/uncore/ptc/ptc_defines.v
+1747664802 ../../RivRtos/src/soc/uncore/clint/clint_top.sv
+1747664802 ../../RivRtos/src/soc/uncore/clint/clint_wb.sv
+1747664802 ../../RivRtos/src/soc/uncore/uart/uart_wb.v
+1747664802 ../../RivRtos/src/soc/uncore/uart/uart_transmitter.v
+1747664802 ../../RivRtos/src/soc/uncore/uart/uart_top.v
+1747664802 ../../RivRtos/src/soc/uncore/uart/uart_tfifo.v
+1747664802 ../../RivRtos/src/soc/uncore/uart/uart_sync_flops.v
+1747664802 ../../RivRtos/src/soc/uncore/uart/uart_rfifo.v
+1747664802 ../../RivRtos/src/soc/uncore/uart/uart_regs.v
+1747664802 ../../RivRtos/src/soc/uncore/uart/uart_receiver.v
+1747664802 ../../RivRtos/src/soc/uncore/uart/raminfr.v
+1747664802 ../../RivRtos/src/soc/uncore/uart/uart_defines.v
+1747664802 ../../RivRtos/src/soc/uncore/spi/simple_spi_top.v
+1747664802 ../../RivRtos/src/soc/uncore/spi/fifo4.v
+1747664802 ../../RivRtos/src/soc/uncore/gpio/gpio_top.sv
+1747664802 ../../RivRtos/src/soc/uncore/gpio/bidirec.sv
+1747664802 ../../RivRtos/src/soc/uncore/gpio/gpio_defines.v
+1747664802 ../../RivRtos/src/soc/WishboneInterconnect/wishbone_controller.sv
+1747664802 ../../RivRtos/src/soc/WishboneInterconnect/wb_intercon.sv
+1747664802 ../../RivRtos/src/soc/WishboneInterconnect/wb_intercon_1.2.2-r1/wb_mux.v
+1747664802 ../../RivRtos/src/soc/core/rv32i_top.sv
+1747664802 ../../RivRtos/src/soc/core/core_dbg_fsm.sv
+1747664802 ../../RivRtos/src/soc/core/control_unit.sv
+1747664802 ../../RivRtos/src/soc/core/data_path.sv
+1747664802 ../../RivRtos/src/soc/core/alu.sv
+1747664802 ../../RivRtos/src/soc/core/exception_encoder.sv
+1747664802 ../../RivRtos/src/soc/core/atomic_extension.sv
+1747664802 ../../RivRtos/src/soc/core/iadu.sv
+1747664802 ../../RivRtos/src/soc/core/decompressor.sv
+1747664802 ../../RivRtos/src/soc/core/pipeline_controller.sv
+1747664802 ../../RivRtos/src/soc/core/hazard_controller.sv
+1747664802 ../../RivRtos/src/soc/core/forwarding_unit.sv
+1747664802 ../../RivRtos/src/soc/core/rom.sv
+1747664802 ../../RivRtos/src/soc/core/reg_file.sv
+1747664802 ../../RivRtos/src/soc/core/main_control.sv
+1747664802 ../../RivRtos/src/soc/core/imm_gen.sv
+1747664802 ../../RivRtos/src/soc/core/csr_file.sv
+1747664802 ../../RivRtos/src/soc/core/branch_controller.sv
+1747664802 ../../RivRtos/src/soc/core/div.sv
+1747664802 ../../RivRtos/src/soc/core/mul.sv
+1747664802 ../../RivRtos/src/soc/core/alu_control.sv
+1747664802 ../../RivRtos/src/soc/core/alignment_units.sv
+1747664802 ../../RivRtos/src/soc/debug/debug_pkg.sv
+1747664802 ../../RivRtos/src/soc/core/lib.sv
+1747916247 ../../Soc/tb/top.sv
+1747916201 ../../Soc/tb/defines.sv
+1747917115 ../../Soc/tb/hw_top.sv
+1747664802 ../../Soc/tb/clkgen.sv
+1747910370 ../../Soc/soc_ref_module/soc_pkg.sv
+1747824420 ../../Peripherals/spi_uvc/wb_x_spi_module/sv/spi_module_pkg.sv
+1747904147 ../../Peripherals/spi_uvc/spi/sv/spi_if.sv
+1747902185 ../../Peripherals/spi_uvc/spi/sv/spi_pkg.sv
+1747664802 ../../Soc/clock_and_reset/sv/clock_and_reset_if.sv
+1747664802 ../../Soc/clock_and_reset/sv/clock_and_reset_pkg.sv
+1747664802 ../../Soc/wb_bfm/sv/wb_if.sv
+1747920835 ../../Soc/wb_bfm/sv/wb_pkg.sv
+1747916201 defines.sv
 1733289098 /mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv
 1733289098 /mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/uvm_pkg.sv
-1747139322 rtl_filelist.f
-1747650261 filelist.f
+1747818600 rtl_filelist.f
+1747916034 filelist.f
 1733285154 /mnt/NVME2/synopsys/vcs/W-2024.09-SP1/linux64/lib/vcsdp.tab
 5
 1733289097 /mnt/NVME2/synopsys/vcs/W-2024.09-SP1/etc/uvm/dpi/uvm_dpi.cc
@@ -1406,5 +1411,5 @@ ALE_HOME=/mnt/NVME2/synopsys/ale
 1733286010 /mnt/NVME2/synopsys/vcs/W-2024.09-SP1/linux64/lib/liberrorinf.so
 1733286000 /mnt/NVME2/synopsys/vcs/W-2024.09-SP1/linux64/lib/libsnpsmalloc.so
 1733285992 /mnt/NVME2/synopsys/vcs/W-2024.09-SP1/linux64/lib/libvfs.so
-1747653525 simv.daidir
+1747921101 simv.daidir
 -1 partitionlib
